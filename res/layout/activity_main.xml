@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="重新连接" />
+
+    <EditText
+        android:id="@+id/et_latitude"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_connect"
+        android:layout_marginTop="5dp"
+        android:hint="latitude"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/et_longitude"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_connect"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/et_latitude"
+        android:hint="longitude"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btn_location"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_latitude"
+        android:layout_marginTop="5dp"
+        android:text="当前位置" />
+
+    <EditText
+        android:id="@+id/et_query"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_latitude"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/btn_location"
+        android:hint="Query Name" />
+
+    <Button
+        android:id="@+id/btn_query"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_latitude"
+        android:layout_toRightOf="@id/et_query"
+        android:layout_marginTop="5dp"
+        android:text="查询" />
+
+    <Button
+        android:id="@+id/btn_go"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_location"
+        android:layout_marginTop="5dp"
+        android:text=" Get Nearby Places " />
+
+    <ListView
+        android:id="@+id/lv_places"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_go"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn_connect"
+        android:layout_toRightOf="@+id/btn_connect" />
+
+</RelativeLayout>
