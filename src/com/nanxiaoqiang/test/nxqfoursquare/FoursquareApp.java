@@ -235,6 +235,7 @@ public class FoursquareApp {
 			// 若状态码为200 ok
 			if (httpResponse.getStatusLine().getStatusCode() == 200) {
 				// 取出回应字串
+				// 在此可以进行返回值解析
 				String strResult = EntityUtils.toString(httpResponse
 						.getEntity());
 				Log.i(TAG, "strResult is :" + strResult);

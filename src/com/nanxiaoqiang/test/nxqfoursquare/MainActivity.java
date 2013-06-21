@@ -26,11 +26,6 @@ import android.widget.Toast;
 import com.nanxiaoqiang.test.nxqfoursquare.FoursquareApp.FsqAuthListener;
 
 public class MainActivity extends Activity {
-	//
-	// public static final String CLIENT_ID =
-	// "KJL0BHQYSTCUQRQ2S4D0BSZV2SECX5KN5RK2HG0PDJJ0BFBA";
-	// public static final String CLIENT_SECRET =
-	// "DOAB01IHEYIJR1ZGW1WGJX1JQ2JD3FB0S0YGDJEC3QVE2NPD";
 
 	private Button connectBtn;// 登录按钮
 	private Button btnGo;// 用于检查Near Close的按钮
